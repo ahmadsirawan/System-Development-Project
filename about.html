@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,200;1,300;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/styleAbout.css" type="text/css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navContainer">
+            <a href="index.html">
+                <figure id="logo">
+                    <h1>XYZ</h1>
+                </figure>
+            </a>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="newProducts.html">New Products</a>
+                <a href="usedProducts.html">Used Products</a>
+                <a href="services.html">Services</a>
+                <a href="about.html" class="active">About Us</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars icon"></i>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="header-content">
+                <h1>About Us</h1>
+              
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+        <h2>Who We Are?</h2>
+        <p>XYZ is a sporting goods retail store that sells new and used products and provides equipment maintenance as well as
+        other services. XYZ is your number one source for Hockey, Ski, Snowboarding, Bicycling, Racket sports, and sports
+        Apparel. We're dedicated to providing you with the very best of sports products, with an emphasis on Value, Price, and
+        Service.
+      </p>
+
+        <p>Founded in Quebec in 1999, XYZ has come a long way from its beginnings in Mont-Tremblant. When we first started out, our
+        passion for high-quality sports equipment drove us to start our own business.</p>
+
+        <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please
+        don't hesitate to pass by one of our stores or contact us via email at customerservice@xyz.com</p>
+        </section>
+    </main>
+    <footer>
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/ig.png" alt=""></a>
+            <a href="#"><img src="images/tw.png" alt=""></a>
+            <a href="#"><img src="images/yt-2.png" alt=""></a>
+            <a href="tel:+18887381777">1-888-738-1777</a>
+        </div>
+        <p>&copy;2022 XYZ Corporation. All rights reserved.</p>
+    </footer>
+    <div class="lds-rippleContainer">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    $(window).on('load', function () {
+
+        setTimeout(
+            function () {
+
+                $('.lds-roller').fadeOut(1000);
+                $('.lds-rippleContainer').fadeOut(2000);
+            });
+    });
+    const ham = document.querySelector(".hamburger");
+    const hamIcon = document.querySelector(".icon");
+    const navBar = document.querySelector(".navbar");
+    const links = document.querySelectorAll(".navbar a");
+
+    window.addEventListener('resize', () => {
+        if (screen.width > 876) {
+            links.forEach(link => {
+
+                link.style.opacity = "1";
+            })
+
+        }
+
+    });
+
+    ham.addEventListener("click", () => {
+
+        if (ham.firstElementChild.classList.contains('fa-bars')) {
+            ham.firstElementChild.classList.remove('fa-bars');
+            ham.firstElementChild.classList.add('fa-times');
+            navBar.classList.add("open");
+            links.forEach(link => {
+                link.style.opacity = "1";
+            });
+        } else {
+            ham.firstElementChild.classList.remove('fa-times');
+            ham.firstElementChild.classList.add('fa-bars');
+            links.forEach(link => {
+                link.style.opacity = "0";
+            });
+            navBar.classList.remove("open");
+
+
+        }
+
+
+    });
+</script>
+
+</html>

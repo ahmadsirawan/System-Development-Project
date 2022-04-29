@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,200;1,300;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/styleServices.css" type="text/css">
+    <title>Services</title>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navContainer">
+            <a href="index.html">
+                <figure id="logo">
+                    <h1>XYZ</h1>
+                </figure>
+            </a>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="newProducts.html">New Products</a>
+                <a href="usedProducts.html" >Used Products</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars icon"></i>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <h2>Services</h2>
+      
+        <section class="offering">
+
+            <div class="offering-content">
+
+                <div class="new">
+                    <img src="images/PR-service.jpg" alt="">
+                    <div class="productInfo">
+                        <h4>Product Evaluation</h4>
+                            <button class="trigger" id="hold">Book</button>
+                        </div>
+                    </div>
+                
+
+
+                <div class="used">
+                    <img src="images/skate-service.jpg" alt="">
+                    <div class="productInfo">
+                        <h4>Skate Sharpening</h4>
+                        <button class="trigger" id="hold">Book</button>
+                    </div>
+                </div>
+
+
+                <div class="services">
+                    <img src="images/ski-service.jpg" alt="">
+                    <div class="productInfo">
+                        <h4>Ski - Snowboard Maintenance</h4>
+                        <button class="trigger" id="hold">Book</button>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <img src="images/bicycle-service.jpg" alt="">
+                    <div class="productInfo">
+                        <h4>Bicycle Maintenance</h4>
+                        <button class="trigger" id="hold">Book</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+
+
+
+    </main>
+
+    <!-- Product evaluation modal -->
+    <div class="modal">
+
+        <div class="modal-content"><span class="btn-close"><i class="fas fa-times"></i></span>
+            <h1>Fill Out Your Info</h1>
+            <div class="modal-info">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number" required>
+                    <textarea name="details" id="details" placeholder="Product Details" required></textarea>
+                    
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+
+            <div class="calander">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li class="month-name"><span style="font-size:18px"></span>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+            </ul>
+            
+            <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li><span>10</span></li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+            </ul>
+            <div class="time-slots">
+                <div class="time-slots__block">9:30</div>
+                <div class="time-slots__block">10:00</div>
+                <div class="time-slots__block">10:30</div>
+                <div class="time-slots__block">11:00</div>
+                <div class="time-slots__block">11:30</div>
+                <div class="time-slots__block">12:00</div>
+                <div class="time-slots__block">12:30</div>
+                <div class="time-slots__block">13:00</div>
+                <div class="time-slots__block">13:30</div>
+                <div class="time-slots__block">14:00</div>
+                <div class="time-slots__block">14:30</div>
+                <div class="time-slots__block">15:00</div>
+                <div class="time-slots__block">15:30</div>
+                <div class="time-slots__block">16:00</div>
+                <div class="time-slots__block">16:30</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Skate modal -->
+    <div class="modal">
+
+        <div class="modal-content"><span class="btn-close"><i class="fas fa-times"></i></span>
+            <h1>Fill Out Your Info</h1>
+            <div class="modal-info">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number" required>
+                    <label for="services">
+                        Service Type:
+                    <select id="services" name="services">
+                        <option value="sharpening">Sharpening: 5$</option>
+                    </select>
+                    </label>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+        
+                <div class="calander-2">
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li class="month-name"><span style="font-size:18px"></span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+        
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span>10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                    <div class="time-slots-2">
+                        <div class="time-slots__block-2">9:30</div>
+                        <div class="time-slots__block-2">10:00</div>
+                        <div class="time-slots__block-2">10:30</div>
+                        <div class="time-slots__block-2">11:00</div>
+                        <div class="time-slots__block-2">11:30</div>
+                        <div class="time-slots__block-2">12:00</div>
+                        <div class="time-slots__block-2">12:30</div>
+                        <div class="time-slots__block-2">13:00</div>
+                        <div class="time-slots__block-2">13:30</div>
+                        <div class="time-slots__block-2">14:00</div>
+                        <div class="time-slots__block-2">14:30</div>
+                        <div class="time-slots__block-2">15:00</div>
+                        <div class="time-slots__block-2">15:30</div>
+                        <div class="time-slots__block-2">16:00</div>
+                        <div class="time-slots__block-2">16:30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snowboard/Ski modal -->
+    <div class="modal">
+
+        <div class="modal-content"><span class="btn-close"><i class="fas fa-times"></i></span>
+            <h1>Fill Out Your Info</h1>
+            <div class="modal-info">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number" required>
+                    <label for="services">
+                    Service Type: 
+                    <select id="services" name="services">
+                        <option value="waxing">Waxing: 10$</option>
+                        <option value="edges ">Edges: 10$</option>
+                        <option value="binding ">Binding: 10$</option>
+                        <option value="package">Package (All): 25$</option>
+                    </select>
+                    </label>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+        
+                <div class="calander-3">
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li class="month-name"><span style="font-size:18px"></span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+        
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span>10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                    <div class="time-slots-3">
+                        <div class="time-slots__block-3">9:30</div>
+                        <div class="time-slots__block-3">10:00</div>
+                        <div class="time-slots__block-3">10:30</div>
+                        <div class="time-slots__block-3">11:00</div>
+                        <div class="time-slots__block-3">11:30</div>
+                        <div class="time-slots__block-3">12:00</div>
+                        <div class="time-slots__block-3">12:30</div>
+                        <div class="time-slots__block-3">13:00</div>
+                        <div class="time-slots__block-3">13:30</div>
+                        <div class="time-slots__block-3">14:00</div>
+                        <div class="time-slots__block-3">14:30</div>
+                        <div class="time-slots__block-3">15:00</div>
+                        <div class="time-slots__block-3">15:30</div>
+                        <div class="time-slots__block-3">16:00</div>
+                        <div class="time-slots__block-3">16:30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bicycle modal -->
+    <div class="modal">
+
+        <div class="modal-content"><span class="btn-close"><i class="fas fa-times"></i></span>
+            <h1>Fill Out Your Info</h1>
+            <div class="modal-info">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number" required>
+                    <label for="services">
+                        Service Type:
+                        <select id="services" name="services">
+                            <option value="safetyInspection">Safety inspection: 10$</option>
+                            <option value="wash">Wash: 10$</option>
+                            <option value="wheelAlignment">Wheel Alignment: 10$</option>
+                            <option value="brakeAdjustment ">Brake adjustment</option>
+                            <option value="package">Package (All): 35$</option>
+                        </select>
+                    </label>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+        
+                <div class="calander-4">
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li class="month-name">August<span style="font-size:18px">2021</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+        
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span>10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                    <div class="time-slots-4">
+                        <div class="time-slots__block-4">9:30</div>
+                        <div class="time-slots__block-4">10:00</div>
+                        <div class="time-slots__block-4">10:30</div>
+                        <div class="time-slots__block-4">11:00</div>
+                        <div class="time-slots__block-4">11:30</div>
+                        <div class="time-slots__block-4">12:00</div>
+                        <div class="time-slots__block-4">12:30</div>
+                        <div class="time-slots__block-4">13:00</div>
+                        <div class="time-slots__block-4">13:30</div>
+                        <div class="time-slots__block-4">14:00</div>
+                        <div class="time-slots__block-4">14:30</div>
+                        <div class="time-slots__block-4">15:00</div>
+                        <div class="time-slots__block-4">15:30</div>
+                        <div class="time-slots__block-4">16:00</div>
+                        <div class="time-slots__block-4">16:30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/ig.png" alt=""></a>
+            <a href="#"><img src="images/tw.png" alt=""></a>
+            <a href="#"><img src="images/yt-2.png" alt=""></a>
+            <a href="tel:+18887381777">1-888-738-1777</a>
+        </div>
+        <p>&copy;2022 XYZ Corporation. All rights reserved.</p>
+    </footer>
+    <div class="lds-rippleContainer">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    
+    <script>
+
+        $(window).on('load', function () {
+
+            setTimeout(
+                function () {
+
+                    $('.lds-roller').fadeOut(1000);
+                    $('.lds-rippleContainer').fadeOut(2000);
+                });
+        });
+        </script>
+
+   <script src="js/hamburger.js"></script>
+   <script src="js/modal.js"></script>
+   <script src="js/datePicker.js"></script>
+
+</body>
+
+
+
+</html>
